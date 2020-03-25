@@ -1,0 +1,78 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  max-height: 1000000px;
+}
+
+//- HTML5 display-role reset for older browsers
+main,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  color: #000;
+  background: #E5E5E5;
+  font: 14px/16px Arial;
+  min-width: 320px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+}
+
+#wrapper {
+  overflow: hidden;
+}
+
+// adaptive images
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+// google map fix
+.gm-style img {
+  max-width: none;
+}
+
+.resize-active * {
+  transition: none !important;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+button,
+a {
+  transition: all 0.3s ease-in-out !important;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
